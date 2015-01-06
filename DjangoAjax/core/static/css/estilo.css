@@ -1,0 +1,19 @@
+html{
+    background: burlywood;
+    font-family: Trebuchet;
+}
+
+h1{
+    color: brown;
+}
+
+#barraPrincipal{
+    width: 95%;
+    padding: 5px;
+    background: brown;
+    color: white;
+}
+
+#rodape{
+    font-size: small;
+}

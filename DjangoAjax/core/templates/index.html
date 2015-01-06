@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<script type='text/javascript'>
+    $("document").ready(function(){
+        
+        $("#botao").click(function(){
+            
+            $.ajax({
+                url: "mensagem/",
+                type: "GET",
+                //data: { csrftoken: csrftoken},
+                //data: { nome: "parreira" },
+                
+                success: function(e){
+                    console.log(e);
+                    console.log("SUCESSO !!!");
+                    $("#area").append(e);
+                },
+                
+                error: function(e){
+                    console.log("RETORNOU ERRO" + e.status + ":" + e.responseText);
+                    $("#area").html(e.responseText);
+                },
+            });
+        });
+        
+    });
+    
+    
+</script>
+<h2>Bem Vindo !!! {{ nome }} - fone {{ fones.0.fixo }} - cidade {{ cidade }}</h2>
+<form action="." method="post">
+    {% csrf_token %}
+    <input type="button" id="botao" value="clique">
+    <div id="area"></div>
+</form>
+{% endblock conteudo %}

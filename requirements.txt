@@ -1,0 +1,7 @@
+dj-static==0.0.5
+Django==1.7.2
+gunicorn==18.0
+pystache==0.5.4
+static==1.1.1
+Unipath==1.0
+psycop2=2.5.3

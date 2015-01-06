@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arquivo index - bem vindo</title>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+        <link type="text/css" href='{{ STATIC_URL }}css/estilo.css' rel='stylesheet' media='screen' />
+    </head>
+    <body>
+    <h1>Site Experimental Django - AJAX - variável static_url: {{ STATIC_URL }}</h1>
+    {% block conteudo %}
+    {% endblock conteudo %}
+    </body>
+</html>
