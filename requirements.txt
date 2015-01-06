@@ -4,4 +4,4 @@ gunicorn==18.0
 pystache==0.5.4
 static==1.1.1
 Unipath==1.0
-psycop2=2.5.3
+psycop2==2.5.3
